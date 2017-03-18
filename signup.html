@@ -1,124 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-<title>User Sign Up</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Podkova:400,700' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet">
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<header class="sub__header">
-  <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <h1 class="navbar-brand pull-left"><a href="index.html">Sym<span>pation</span></a></h1>
-      </div>
-      <div class="navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-            <ul class="dropdown-menu">
-              <li><a href="index_fixed.html">Home / Fixed</a></li>
-              <li><a href="index_with_blog.html">Home + Blog</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="typography.html">Typography</a></li>
-              <li><a href="shortcodes.html">Shortcodes</a></li>
-              <li><a href="store.html">Web Store</a></li>
-              <li><a href="blog.html">Blog & News</a></li>
-              <li><a href="tables.html">Tables</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-            </ul>
-          </li>
-          <li><a href="left_sidebar.html">left sidebar</a></li>
-          <li><a href="right_sidebar.html">right sidebar</a></li>
-          <li class="active"><a href="full_width.html">full page</a></li>
-          <li><a href="contact.html">contact us</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-  </div>
-</header>
-<section class="main__middle__container">
-  <div class="container recent-posts">
-    <h3 class="heading sub"><span class="heading_bg"><span class="bordered_heading">Sign In</span></span></h3>
-    <div class="row no_padding no-margin nothings">
-      <h4>Enter the following:</h4>
-      <form action="php7/Register.php" method="post">
-          <input type="text" name="user_id"> User ID</input><br>
-          <input type="password" name="user_password"> Password</input><br>
-          <input type="text" name="user_name"> Name</input><br>
-          <input type="email" name="user_email"> Email</input><br>
-          <input type="tel" name="user_phone"> Phone Number</input><br>
-          <input type="text" name="user_address"> Address</input><br>
-          <input type="number" name="user_creditcard"> Credit Card</input><br>
-          <input type="submit" value="register"></input>
-      </form>
-      <hr>
-    </div>
-      <br class="clear"/>
-  </div>
-</section>
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <h3>About</h3>
-        <p>We strive to deliver a level of service that exceeds the expectations of our customers. <br />
-          <br />
-          If you have any questions about our products or services, please do not hesitate to contact us. We have friendly, knowledgeable representatives available seven days a week to assist you.</p>
-      </div>
-      <div class="col-md-3">
-        <h3>Tweets</h3>
-        <p><span>Tweet</span> <a href="#">@You</a><br />
-          Etiam egestas, ipsum posuere accumsan sollicitudin, nulla mauris volutpat sem, sit amet rutrum risus. </p>
-        <p><span>Tweet</span> <a href="#">@You</a><br />
-          Quisque porta tellus vitae adipiscing molestie. Mauris et lacus blandit, malesuada.</p>
-      </div>
-      <div class="col-md-3">
-        <h3>Mailing list</h3>
-        <p>Subscribe to our mailing list for offers, news updates and more!</p>
-        <br />
-        <form action="#" method="post" class="form-inline" role="form">
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">your email:</label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="your email:">
-          </div>
-          <button type="submit" class="btn btn-primary">subscribe</button>
-        </form>
-      </div>
-      <div class="col-md-3">
-        <h3>Social</h3>
-        <p>123 Business Way<br />
-          San Francisco, CA 94108<br />
-          USA<br />
-          <br />
-          Phone: (888) 123-4567<br />
-          Fax: (887) 123-4567<br />
-          <br />
-        </p>
-        <div class="social__icons"> <a href="#" class="socialicon socialicon-twitter"></a> <a href="#" class="socialicon socialicon-facebook"></a> <a href="#" class="socialicon socialicon-google"></a> <a href="#" class="socialicon socialicon-mail"></a> </div>
-      </div>
-    </div>
-    <hr>
-    <p class="text-center">&copy; Copyright ABC Company. All Rights Reserved.</p>
-  </div>
-</footer>
+  <meta charset="UTF-8">
+  <title>Login & Sign Up Form Concept</title>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+      <link rel="stylesheet" href="css/signup_style.css">
+
+
+</head>
+
+<body>
+  <div class="cotn_principal">
+<div class="cont_centrar">
+
+  <div class="cont_login">
+<div class="cont_info_log_sign_up">
+      <div class="col_md_login">
+<div class="cont_ba_opcitiy">
+
+        <h2>LOGIN</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+  </div>
+  </div>
+<div class="col_md_sign_up">
+<div class="cont_ba_opcitiy">
+  <h2>SIGN UP</h2>
+
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+</div>
+  </div>
+       </div>
+
+
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+       </div>
+
+    </div>
+<div class="cont_forms" >
+    <div class="cont_img_back_">
+       <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+       </div>
+ <div class="cont_form_login">
+<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+   <h2>LOGIN</h2>
+ <input type="text" placeholder="Email" />
+<input type="password" placeholder="Password" />
+<button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+  </div>
+
+   <div class="cont_form_sign_up">
+<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+     <h2>SIGN UP</h2>
+<input type="text" placeholder="Email" />
+<input type="text" placeholder="User" />
+<input type="password" placeholder="Password" />
+<input type="password" placeholder="Confirm Password" />
+<button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+
+  </div>
+
+    </div>
+
+  </div>
+ </div>
+</div>
+
+    <script src="js/signup.js"></script>
+
 </body>
 </html>
