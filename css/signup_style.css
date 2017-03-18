@@ -21,7 +21,14 @@ background: linear-gradient(135deg,  #cfd8dc 0%,#607d8b 100%,#b0bec5 100%); /* W
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', endColorstr='#b0bec5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
+.list{
+  font-size: 8pt;
 
+}
+
+.signup{
+
+}
 
 .cont_centrar {
   position: relative;
@@ -41,7 +48,7 @@ margin-left: -320px;
 position: relative;
   float: left;
   width: 640px;
-  height: 280px;
+  height: 450px;
 overflow: hidden;
   background-color: #fff;
   margin-top: 100px;
