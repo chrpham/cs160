@@ -54,13 +54,13 @@ function server_signup(){
     var pass = document.getElementById('user_password').value;
     var conf_pass = document.getElementById('confirm_password').value;
 
-    if(password != conf_pass){
+    if(pass != conf_pass){
         // check if password match
         alert('Password not match!');
     }
     else{
         // it's better to do with ajax, but this also works
-        post('php/Signup.php', {user_id: id, user_name: name, user_password: password});
+        post('php/Signup.php', {user_id: id, user_name: name, user_password: pass});
     }
 }
 
