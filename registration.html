@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ETES Get Started </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet">
+
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel="stylesheet" href="css/signup_style.css">
+
+
+
+</head>
+<body>
+<header class="main__header">
+  <div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+      
+      <div class="navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="buy_tickets.html">Buy Tickets</a></li>
+          <li><a href="sell_tickets.html">Sell Tickets</a></li>
+          <li><a href="signup.html">Sign In</a></li>
+      </div>
+    
+    </nav>
+  </div>
+
+</header>
+
+
+
+  <div class="text-center three-blocks">
+    <div class="container" id="buy">
+      <div class="row">
+
+        <div class="col-md-12">
+         
+          <div class="cont_login">
+            <div class="cont_info_log_sign_up">
+              <div class="col_md_login">
+                <div class="cont_ba_opcitiy">
+                  <h2>LOGIN</h2>
+                  <p>Welcome to My Account</p>
+                  <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                </div>
+              </div>
+              <div class="col_md_sign_up">
+                <div class="cont_ba_opcitiy">
+                  <h2>SIGN UP</h2>
+                  <p class="list">Don't have an account?</p>
+                  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+                </div>
+              </div>
+            </div>
+            <div class="cont_back_info">
+              <div class="cont_img_back_grey">
+                <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+              </div>
+            </div>
+            <div class="cont_forms" >
+              <div class="cont_img_back_">
+               <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+              </div>
+            <div class="cont_form_login">
+              <a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+              <h2>LOGIN</h2>
+              <input type="text" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+            </div>
+
+            <div class="cont_form_sign_up">
+              <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+              <h2>SIGN UP</h2>
+              <input type="text" placeholder="Email" />
+              <input type="text" placeholder="Username" />
+              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Confirm Password" />
+              <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+            </div>
+          </div>
+        </div>
+
+          
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<p class="text-center">&copy; Copyright ABC Company. All Rights Reserved.</p>
+
+  </div>
+</div>
+
+  <br>
+<br>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+$('.carousel').carousel({
+  interval: 3500, // in milliseconds
+  pause: 'none' // set to 'true' to pause slider on mouse hover
+})
+
+</script>
+<script src="js/signup.js"></script>
+</body>
+</html>
