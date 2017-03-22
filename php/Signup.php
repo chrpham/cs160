@@ -17,8 +17,8 @@ else{
         echo "Error: " . mysql_error($conn);
     }
     else{
-        // change to user dashboard when it's done
-        header("Location: ../php/Testserver.php");
+        // change to feedback user_id instead
+        echo "success";
     }
 }
 
