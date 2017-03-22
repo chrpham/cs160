@@ -6,8 +6,8 @@ $login_user_password = $_POST['login_user_password'];
 
 $sql = "select * from logins where logins.login_user_id = '" . $login_user_id . "'";
 
-$result = mysql_query($sql, $conn);
-while($row = mysql_fetch_array($result)){
+$result = mysqli_query($conn, $sql);
+while($row = mysqli_fetch_array($result)){
     $data[] = $row;
 }
 
@@ -22,5 +22,5 @@ else{
         echo $login_user_id;
     }
 }
-mysql_close($conn);
+mysqli_close($conn);
 ?>

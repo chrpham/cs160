@@ -12,8 +12,8 @@ foreach($tables as $table){
     $keys = array();
     //fetch data
     $sql = "select * from " . $table . "";
-    $result = mysql_query($sql, $conn);
-    while($row = mysql_fetch_array($result)){
+    $result = mysqli_query($conn, $sql);
+    while($row = mysqli_fetch_array($result)){
     	$datas[] = $row;
     }
     // error message if data is null
@@ -46,5 +46,5 @@ foreach($tables as $table){
     }
 }
 // close connection
-mysql_close($conn);
+mysqli_close($conn);
 ?>

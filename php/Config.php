@@ -8,13 +8,13 @@ $database = "ticket_exchange";
 date_default_timezone_set("America/Los_Angeles");
 
 // create connection
-$conn = mysql_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password);
 
 // check connection
 if(!$conn){
-    die("Connection failed: " . mysql_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
 }
 
 // set database
-mysql_select_db($database);
+mysqli_select_db($conn, $database);
 ?>
