@@ -44,8 +44,28 @@ document.querySelector('.cont_form_login').style.display = "none";
 }
 
 function server_login(){
-    // TBD
-    window.alert('server_login');
+    var lg_id = document.getElementById('login_user_id').value;
+    var lg_pass = document.getElementById('login_user_password').value;
+
+    $.ajax({
+        url: 'php/Login.php',
+        type: 'POST',
+        data: {login_user_id: lg_id, login_user_password: lg_pass},
+        success: function(result){
+            if(result != ''){
+                if(result == 'error_user_id'){
+                    alert('Error: User ID does not exist in database.');
+                }
+                else if(result == 'error_password'){
+                    alert('Error: Password doesn\'t match! Please re-enter.');
+                }
+                else{
+                    alert('Success! Now redirect to user dashboard.')
+                    window.location = 'userdashboard.html?user_id=' + result;
+                }
+            }
+        }
+    });
 }
 
 function server_signup(){
@@ -65,8 +85,15 @@ function server_signup(){
             type: 'POST',
             data: {user_id: id, user_email: email, user_password: pass},
             success: function(result){
-                // TBD: go to dashboard
-                alert(result);
+                if(result != ''){
+                    if(result == 'error'){
+                        alert('Your username exists. Choose another one.');
+                    }
+                    else{
+                        alert('Success! Now redirect to user dashboard.')
+                        window.location = 'userdashboard.html?user_id=' + result;
+                    }
+                }
             }
         });
     }

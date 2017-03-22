@@ -91,7 +91,7 @@
         data: "",                        //you can insert url argumnets here to pass to api.php
                                          //for example "id=5&parent=6"
         dataType: 'json',                //data format
-        success: function(data)          //on recieve of reply
+        success: function(result)          //on recieve of reply
         {
           //var id = data[0];              //get id
           //var vname = data[1];           //get name
@@ -103,7 +103,7 @@
           // http://api.jquery.com/category/selectors/
 
           // TBD: manipulate returned json data or change return value instead
-          $('#output').html(JSON.stringify(data));
+          $('#output').html(JSON.stringify(result));
         }
       });
     });
