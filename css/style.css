@@ -523,7 +523,7 @@ footer .btn.btn-primary {
 }
 .three-blocks {
 	background: url('../images/chad-kirchoff-184856.jpg') no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 }
 /*main__middle__container*/
 .main__middle__container h3.heading {
